@@ -4,9 +4,9 @@
 
     <h3 :title="posts[0].id">{{ posts[0].title }}</h3>
 
-    <p v-if="condition">первое <br>{{ posts[0].body }}</p>
-		<p v-else-if="!condition">второе <br>{{ posts[1].body }}</p>
-		<p v-else>Иначе</p>
+    <p v-if="condition">первое <br />{{ posts[0].body }}</p>
+    <p v-else-if="!condition">второе <br />{{ posts[1].body }}</p>
+    <p v-else>Иначе</p>
 
     <!-- <div v-for="(post, index) of 3" :key="index" class="post-item">
       {{ index + 1 }} {{ post.title }} -->
@@ -72,7 +72,7 @@ export default {
         body: "dignissimos aperiam dolorem qui eum\nfacilis quibus…\nipsam ut commodi dolor voluptatum modi aut vitae. Dignissimos aperiam dolorem qui eum\nfacilis quibus…\nipsam ut commodi dolor voluptatum modi aut vitae. Dignissimos aperiam dolorem qui eum\nfacilis quibus…\nipsam ut commodi dolor voluptatum modi aut vitae.",
       },
     ],
-		condition: false,
+    condition: false,
   }),
   methods: {},
   computed: {
